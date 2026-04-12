@@ -1,0 +1,87 @@
+{
+  "accounts": [
+    {
+      "name": "gmail",
+      "provider": "gmail",
+      "email": "user@gmail.com",
+      "imap_host": "imap.gmail.com",
+      "imap_port": 993,
+      "username": "user@gmail.com",
+      "secret_env": "EMAIL_GMAIL_SECRET",
+      "auth_type": "app_password",
+      "folder": "INBOX",
+      "enabled": true,
+      "aliases": [
+        "gmail",
+        "mail"
+      ],
+      "tags": [
+        "personal"
+      ],
+      "EMAIL_REPLY_APPROVAL_TTL_MINUTES": 60,
+      "EMAIL_REPLY_ALLOWED_ACCOUNTS": [
+        "imap"
+      ],
+      "EMAIL_REPLY_ALLOWED_DOMAINS": [
+        "example.com"
+      ],
+      "EMAIL_REPLY_BLOCKED_LOCALPART_PREFIXES": [
+        "noreply",
+        "no-reply",
+        "donotreply",
+        "mailer-daemon"
+      ],
+      "EMAIL_REPLY_BLOCK_BULK": true,
+      "notification_policy": {
+        "enabled": true,
+        "important_only": false
+      }
+    },
+    {
+      "name": "m365",
+      "provider": "microsoft365",
+      "email": "user@microsoft.com",
+      "imap_host": "outlook.office365.com",
+      "imap_port": 993,
+      "username": "user@microsoft.com",
+      "secret_env": "EMAIL_M365_SECRET",
+      "auth_type": "app_password",
+      "folder": "INBOX",
+      "enabled": true,
+      "aliases": [
+        "m365",
+        "work"
+      ],
+      "tags": [
+        "work"
+      ],
+      "notification_policy": {
+        "enabled": true,
+        "important_only": false
+      }
+    },
+    {
+      "name": "imap",
+      "provider": "imap",
+      "email": "user@domain.com",
+      "imap_host": "imap.domain.com",
+      "imap_port": 993,
+      "username": "user@domain.com",
+      "secret_env": "EMAIL_IMAP_SECRET",
+      "auth_type": "password",
+      "folder": "INBOX",
+      "enabled": true,
+      "aliases": [
+        "imap",
+        "general"
+      ],
+      "tags": [
+        "general"
+      ],
+      "notification_policy": {
+        "enabled": true,
+        "important_only": true
+      }
+    }
+  ]
+}

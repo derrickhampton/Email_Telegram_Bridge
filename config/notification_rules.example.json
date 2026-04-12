@@ -1,0 +1,15 @@
+{
+  "defaults": {
+    "important_only": false,
+    "max_messages_per_run": 10,
+    "snippet_length": 220
+  },
+  "priority_keywords": {
+    "subject": ["urgent", "invoice", "payment", "action required"],
+    "from": ["billing@", "accounts@", "support@", "paypal@"]
+  },
+  "telegram": {
+    "bot_token_env": "TELEGRAM_BOT_TOKEN",
+    "chat_id_env": "TELEGRAM_CHAT_ID"
+  }
+}

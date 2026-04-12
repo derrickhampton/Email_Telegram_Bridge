@@ -1,0 +1,37 @@
+# Secrets / local env
+.env
+.env.local
+config/.env
+config/*.env
+
+# Live account config
+config/accounts.json
+
+# Runtime state
+data/*
+!data/.gitkeep
+
+# Logs / temp files
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# Python cache / build artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# OS / editor files
+.DS_Store
+.vscode/
+.idea/
