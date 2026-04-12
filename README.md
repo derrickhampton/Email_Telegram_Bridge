@@ -4,6 +4,31 @@
 ## Overview
 A secure, lightweight email fetcher and Telegram reply bridge supporting multiple accounts with minimal dependencies.
 
+## What It Is
+
+Email Telegram Bridge is a self-hosted multi-account email-to-Telegram workflow tool. It monitors inboxes, sends new-email notifications to Telegram, and supports approval-gated email replies using SMTP.
+
+## Who It Is For
+
+This project is for developers, operators, and self-hosters who want a lightweight human-in-the-loop email workflow that can run locally on Linux and integrate email notifications and reply handling into Telegram.
+
+## Why It Is Useful
+
+It helps you:
+- receive new email alerts in Telegram
+- create quick or context-aware draft replies
+- approve replies before anything is sent
+- manage multiple inboxes from one workflow
+- keep email automation lightweight and locally controlled
+
+## How It Is Different
+
+Email Telegram Bridge is designed around:
+- approval-gated replies instead of auto-send
+- a Telegram-first workflow for inbox triage and reply handling
+- optional local Ollama support for Deep Think draft generation
+- multi-account reply profiles for account-aware behavior
+- a self-hosted, lightweight architecture with minimal dependencies
 ## Features
 - Multi-account IMAP support
 - Check unread, recent, and important emails
@@ -53,3 +78,4 @@ Use these public-safe templates instead:
 - Use local Ollama models to generate guarded Deep Think email drafts
 - Manage multiple inboxes with account-aware reply profiles and SMTP sending
 - Run a lightweight self-hosted human-in-the-loop email assistant on Linux
+
