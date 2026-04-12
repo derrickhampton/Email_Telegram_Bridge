@@ -46,3 +46,10 @@ Use these public-safe templates instead:
 1. Copy the account template:
    ```bash
    cp config/accounts.example.json config/accounts.json
+
+## Use Cases
+- Send new email notifications to Telegram for one or more inboxes
+- Review, approve, or cancel email replies directly from Telegram
+- Use local Ollama models to generate guarded Deep Think email drafts
+- Manage multiple inboxes with account-aware reply profiles and SMTP sending
+- Run a lightweight self-hosted human-in-the-loop email assistant on Linux
